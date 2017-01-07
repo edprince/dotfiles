@@ -20,17 +20,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'scrooloose/syntastic'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'ap/vim-css-color'
 " languages
 NeoBundle 'othree/html5.vim'
+NeoBundle 'whatyouhide/vim-gotham'
+NeoBundle 'bitterjug/vim-colors-bitterjug'
 " writing tools
-NeoBundle 'reedes/vim-pencil'
 NeoBundle 'reedes/vim-litecorrect'
 NeoBundle 'reedes/vim-lexical'
-NeoBundle 'danprince/seti.vim'
 call neobundle#end()
 
 " Required:
@@ -43,7 +40,7 @@ NeoBundleCheck
 
 syntax on
 
-color seti
+color gotham
 
 set expandtab
 set tabstop=2
