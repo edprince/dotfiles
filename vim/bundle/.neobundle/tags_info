@@ -1,0 +1,7 @@
+ctrlp.vim
+neobundle.vim
+vim-airline
+vim-airline-themes
+vim-colorschemes
+vim-fugitive
+vimshell
