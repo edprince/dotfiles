@@ -1,18 +1,34 @@
 colorscheme afterglow
 set t_Co=256
 
+
 syntax enable " Allow syntax processing
-set tabstop=4 " Sets number of spaces a tab produces
+set tabstop=2 " Sets number of spaces a tab produces
+set shiftwidth=2
 set softtabstop=4 " Number of spaces in tab when editing
+set smarttab
 set expandtab " Tabs are spaces
 set number " Show line numbers
 set showcmd " Show command in the bottom bar
-filetype indent on " auto indent
+filetype plugin indent on " auto indent
+set autoindent
 set showmatch " Highlights matching [{()}]
 set laststatus=2
+set noswapfile
+set nowrap
+
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+"set foldlevel=1         "this is just what i use
+
+set mouse=c
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
+let g:ctrlp_custom_ignore = 'node_modules'
+
+let mapleader=" "
 
 
 
@@ -40,6 +56,14 @@ NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'sbdchd/neoformat'
+NeoBundle 'tpope/vim-vinegar'
+"NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'sheerun/vim-polyglot'
+"NeoBundle 'leafgarland/typescript-vim'
+
+"hi! link jsStorageClass typescriptIdentifier
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -55,6 +79,12 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+autocmd BufWritePre *.js Neoformat
+
+
+nnoremap <Leader>i :CtrlPMRUFiles<CR>
+nnoremap H 0
+nnoremap L $
 
 
 "UNICODE SYMBOLS

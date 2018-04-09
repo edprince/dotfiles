@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/ed/dev/ukc/var/www/vhosts/ukclimbing.com/subdomains/www2/httpdocs/logbook/r'
+let g:netrw_dirhist_2='/home/ed/dev/ukc/var/www/vhosts/ukclimbing.com/subdomains/www2/httpdocs/logbook'
+let g:netrw_dirhist_3='/home/ed/dev/chatapp/index.html'

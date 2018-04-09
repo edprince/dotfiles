@@ -1,7 +1,11 @@
 ctrlp.vim
+jedi-vim
 neobundle.vim
+neoformat
 vim-airline
 vim-airline-themes
 vim-colorschemes
 vim-fugitive
+vim-polyglot
+vim-vinegar
 vimshell
